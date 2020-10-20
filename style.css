@@ -1,0 +1,460 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    overflow-x: hidden;
+    overflow-y:scroll;
+    scroll-behavior: smooth;
+}
+body{
+    user-select: none;
+    font-family: 'Open Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.container{
+    margin:auto;
+    max-width: 1400px;
+    background: #f9f9f9;
+
+}
+section{
+    padding: 50px 100px;
+}
+a{
+    text-decoration: none;
+
+}
+.top{
+    position: fixed;
+    z-index: 10;
+    bottom: 10px;
+    right: 4%;
+    padding:10px 12px;
+    background: crimson;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 3px;
+    box-shadow: 1px 0px 5px #000;
+}
+header{
+    position: relative;
+    z-index: 99;
+    height: 100vh;
+    position: relative;
+    background:linear-gradient(140deg,rgba(0,0,0,0.3),rgba(0,0,0,0.1)),url("./assets/pexels-expect-best-323780.jpg");
+    background-size: cover;
+    background-position: 100% 100%;
+}
+nav{
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+}
+nav .logo{
+    text-transform: uppercase;
+    font-size:1.5em;
+    color: #fff;
+    font-weight: 700;
+}
+nav .menu li{
+    list-style: none;
+    display: inline-block;    
+}
+nav .menu li a{
+    text-transform: capitalize;
+    margin: 0 15px;
+    color: #fff;
+    transition: color .3s ease-in;
+    font-size: 17px;
+}
+nav .menu li a:hover{
+        color: crimson;
+}
+    .na{
+        display: none;
+    }
+
+.btn{
+    text-transform:capitalize;
+    padding: 15px 30px;
+    background: crimson;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 14px;
+    transition: opacity .3s ease;
+}
+.btn:hover{
+    opacity: .8;
+}
+main{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width:60%;
+    color: #fff;
+    padding: 0 100px;
+    user-select: none;
+}
+main h2{
+    text-transform: capitalize;
+    font-size: 400%;
+    line-height: 1;
+
+}
+main p{
+    margin: 2rem 0;
+    max-width: 300px;
+    font-size: 14px;
+}
+main .btn{
+    text-transform: capitalize;
+    transition: opacity .4s ease;
+
+}
+main .btn:hover{
+    opacity: .8;
+}
+.about{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about .content{
+    flex-basis: 50%;
+    user-select: none;
+}
+.about .content h3{
+    font-size: 1.1em;
+    font-weight: 200;
+    color: crimson;
+    text-transform: capitalize;
+}
+.about .content h2{
+    font-size: 2em;
+    text-transform: capitalize;
+    max-width: 60%;
+}
+.about .content p{
+    margin-bottom: 2rem;
+}
+.about .imgbox{
+    position: relative;
+    flex-basis: 50%;
+     overflow: hidden;
+     height: auto;
+     width: 100%;
+    padding: 20px;
+}
+.about .imgbox img{
+    height:100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#services{
+    background: #dddddd;
+}
+.services h2{
+    text-align: center;
+    text-transform: capitalize;
+    margin: 2rem 0;
+}
+.services .boxgroup{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.services .box{
+    flex-basis: 24%;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    box-shadow: 0 0 5px #ccc;
+}
+.services .box h3{
+    text-transform: capitalize;
+}
+.services .box p{
+    font-size: 14px;
+    font-weight: 300;
+}
+.service-img{
+    padding: 50px 0;
+}
+.service-img h3{
+    text-transform: capitalize;
+    margin: 10px 0;
+}
+.service-img img{
+    border-radius: 10px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    height:auto;
+}
+
+.category h2{
+    text-align: center;
+    text-transform: capitalize;
+    padding: 30px 0;
+}
+.category .workgroup{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.category .box{
+    flex-basis: 20%;
+    text-align: center;
+    margin: 2em;
+}
+.category .box h3{
+    text-transform: capitalize;
+}
+.category .box p{
+    margin: 1.5rem 0;
+    max-width: 200px;
+    margin: auto;
+    font-size: 16px;
+    font-weight: 300;
+}
+footer{
+    background: #dddddd;
+    padding: 70px 100px;
+}
+footer h2{
+    text-align: center;
+    text-transform: capitalize;
+    margin: 2rem 0;
+}
+footer .controll{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer .controll input{
+    outline: none;
+    border: none;
+    width: 400px;
+    padding: 15px 30px;
+    border-radius: 50px;
+    box-shadow: 1px 1px 5px #ccc;
+}
+footer .controll button{
+    padding: 15px 30px;
+    border-radius: 50px;
+    margin-left: -30px;
+    border: none;
+    outline: none;
+    background: crimson;
+    color: #fff;
+    transition:opacity .3s ease;
+}
+footer .controll button:hover{
+    opacity: .8;
+}
+
+.footer-content{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer-content > div{
+    flex-basis: 18%;
+}
+.footer-content > div li{
+    list-style: none;
+    text-transform: capitalize;
+    line-height: 30px;
+    font-size: 14px;
+    font-weight: 300;
+}
+.footer-content > div li a{
+    color: #000;
+    transition: opacity .4s ease;
+}
+.footer-content > div li a:hover{
+    opacity: .5;
+}
+
+.footer-content>div h3{
+    margin: 2rem 0;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.footer-content>div p{
+    max-width: 200px;
+    margin-top: 1.2rem;
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: 300;
+}
+.footer-content .logo{
+    color: crimson;
+    margin-bottom: .51em;
+}
+.author {
+    text-align: center;
+    padding: 15px 0;
+    color: #ccc;
+    background: #222;
+    text-transform: capitalize;
+}
+.author a{
+    text-decoration: none;
+    color: rgb(163, 56, 56);
+}
+.author a:hover{
+    text-decoration: underline;
+}
+.services i{
+    display: inline-block;
+    align-self: flex-start;
+    border-radius: 50%;
+    font-size: 2em;
+    padding: 16px;
+    background: crimson;
+    color: #ffffff;
+}
+.category i{
+    font-size: 2.3em;
+    color: crimson;
+    margin-bottom: 1em;
+}
+@media (max-width:1080px){
+    section{
+        padding: 20px 40px;
+    }
+    footer{
+        padding: 20px 40px;
+    }
+    .footer-content > div{
+    flex-basis: 50%;
+}
+
+}
+@media (max-width:968px){
+        nav a.btn{
+        display: none;
+        }
+
+        main{
+        max-width: 90%;
+        }
+        .category .box{
+            flex-basis: 100%;
+        }
+            .about .imgbox{
+        flex-basis: 100%;
+        padding: 0;
+    }
+    .about .content{       
+        flex-basis: 100%;
+        margin-bottom: 2rem;
+    }
+       
+}
+
+@media (max-width:768px){
+    .na{
+        display: block;
+        font-size: 2em;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    nav .menu{
+        display: none;
+    }
+    .about{
+        padding: 40px 30px;
+    }
+
+    .about .content h2{
+        max-width: 70%;
+        font-size:1.7em;
+    }
+    .services .box{
+        flex-basis: 40%;
+        margin: 2rem;
+    }
+
+}
+@media (max-width:540px){
+    .top{
+        padding: 10px 12px;
+    }
+    header{
+
+    }
+    footer h2{
+        font-size: 1.1em;
+    }
+    nav{
+        padding: 15px 30px;
+    }
+    .btn{
+        padding: 10px 15px;
+    }
+    main{
+        padding: 30px;
+        
+    }
+    main h2{
+        font-size: 2rem;
+    }
+    .about{
+    padding: 30px 5px;
+    }
+    .about .imgbox{
+        flex-basis: 100%;
+        padding: 0;
+    }
+    .about .content{       
+        flex-basis: 100%;
+        margin-bottom: 2rem;
+    }
+    .about .content h2{
+        max-width: 90%;
+        font-size: 1.4em;
+    }
+    .about .content p{
+        font-size: 1em;
+        line-height: 2em;
+        font-weight: 300;
+    }
+    footer .controll input{
+        width: 90%;
+      padding: 15px 25px;
+
+    }
+    footer .controll button{
+      padding: 14px 24px;
+      font-size:16px;
+      display: inline-block;
+      margin: 1.2em auto;
+    }
+
+    .services .box{
+        flex-basis: 100%;
+        margin: .4rem;
+    }
+    .footer-content > div{
+        flex-basis: 100%;
+    }
+
+}
